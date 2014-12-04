@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<configuration>
+	<property>
+		<name>mapreduce.framework.name</name>
+		<value>yarn</value>
+	</property>
+
+	<property>
+		<name>mapreduce.jobhistory.address</name>
+		<value>0.0.0.0:36520</value>
+	</property>
+
+	<property>
+		<name>mapreduce.jobhistory.webapp.address</name>
+		<value>0.0.0.0:36588</value>
+	</property>
+
+	<property>
+		<name>mapreduce.jobhistory.admin.address</name>
+		<value>0.0.0.0:36633</value>
+	</property>
+
+	<property>
+		<name>mapreduce.shuffle.port</name>
+		<value>36562</value>
+	</property>
+
+	<property>
+		<description>A value of 0 disables the timeout.</description>
+		<name>mapreduce.task.timeout</name>
+		<value>0</value>
+	</property>
+
+	<property>
+		<name>mapred.child.java.opts</name>
+		<value>-Xmx2048m</value>
+	</property>
+	<property>
+		<name>mapreduce.tasktracker.reduce.tasks.maximum</name>
+		<value>4</value>
+	</property>
+
+	<!--
+	<property>
+		<name>mapred.child.java.opts</name>
+		<value>-Xmx1024m</value>
+	</property>
+	-->
+</configuration>
