@@ -1,0 +1,12 @@
+*.swp
+bin/
+include/
+lib/
+libexec/
+logs/
+share/
+LICENSE.txt
+NOTICE.txt
+README.txt
+group_execute_log
+
