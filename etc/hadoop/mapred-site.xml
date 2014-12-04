@@ -33,11 +33,15 @@
 
 	<property>
 		<name>mapred.child.java.opts</name>
-		<value>-Xmx2048m</value>
+		<value>-Xmx10240m</value>
 	</property>
 	<property>
 		<name>mapreduce.tasktracker.reduce.tasks.maximum</name>
-		<value>4</value>
+		<value>2</value>
+	</property>
+	<property>
+		<name>mapred.child.java.opts</name>
+		<value>-Xmx10240m</value>
 	</property>
 
 	<!--

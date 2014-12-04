@@ -67,7 +67,7 @@
 	<!--Tuning the memory-->
 	<property>
 		<name>yarn.nodemanager.resource.memory-mb</name>
-		<value>2048</value>
+		<value>8192</value>
 	</property>
 
 	<property>
@@ -81,6 +81,7 @@
 	</property>
 	<!---->
 
+<!--
 	<property>
                 <name>yarn.nodemanager.process-kill-wait.ms</name>
                 <value>4000</value>
@@ -93,13 +94,16 @@
                 <name>yarn.nm.liveness-monitor.expiry-interval-ms</name>
                 <value>3600000</value>
         </property>
+-->
 	<property>
                 <name>yarn.resourcemanager.container.liveness-monitor.interval-ms</name>
                 <value>36000000</value>
         </property>
+<!--
 	<property>
                 <name>yarn.resourcemanager.nm.liveness-monitor.interval-ms</name>
                 <value>3000000</value>
         </property>
+-->
 
 </configuration>
