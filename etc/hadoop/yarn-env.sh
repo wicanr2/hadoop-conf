@@ -33,11 +33,11 @@ if [ "$JAVA_HOME" = "" ]; then
 fi
 
 JAVA=$JAVA_HOME/bin/java
-JAVA_HEAP_MAX=-Xmx2000m 
+JAVA_HEAP_MAX=-Xmx2048m 
 
 # For setting YARN specific HEAP sizes please use this
 # Parameter and set appropriately
- YARN_HEAPSIZE=1000
+#YARN_HEAPSIZE=4000
 
 # check envvars which might override default args
 if [ "$YARN_HEAPSIZE" != "" ]; then

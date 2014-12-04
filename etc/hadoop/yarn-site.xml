@@ -58,6 +58,7 @@
 		<name>yarn.nodemanager.aux-services</name>
 		<value>mapreduce_shuffle</value>
 	</property>
+	
 
 	<property>
 		<name>yarn.nodemanager.aux-services.mapreduce.shuffle.class</name>
@@ -65,9 +66,17 @@
 	</property>
 
 	<!--Tuning the memory-->
+	<!--  
+		Container[..] is running beyond virtual memory limits
+	-->
+	<property>
+		<name>yarn.nodemanager.vmem-check-enabled</name>
+		<value>false</value>
+	</property>
+
 	<property>
 		<name>yarn.nodemanager.resource.memory-mb</name>
-		<value>8192</value>
+		<value>12000</value>
 	</property>
 
 	<property>
@@ -97,7 +106,7 @@
 -->
 	<property>
                 <name>yarn.resourcemanager.container.liveness-monitor.interval-ms</name>
-                <value>36000000</value>
+                <value>3600000</value>
         </property>
 <!--
 	<property>
